@@ -1,0 +1,6 @@
+﻿1, Mobile Phone, 600, Super phone from USA, 10
+2, Laptop, 3200, Super laptop from China, 5
+3, Keyboard, 35, Just keyboard white not black, 43
+4, Mouse, 10, Just mouse, 3
+5, Pen, 1, Pen for arting, 343
+6, Notebook, 1, Notebook for writing, 0
