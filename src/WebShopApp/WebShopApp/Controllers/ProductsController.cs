@@ -31,5 +31,13 @@ namespace WebShopApp.Controllers
 
 			return View(product);
 		}
+
+		public IActionResult ProductsCategory(string category)
+		{
+			var products = _reader.ReadFromFile();
+			products = products.Where(p=>p.Category == category).ToList();
+
+			return View("Products", products);
+		}
 	}
 }

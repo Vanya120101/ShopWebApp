@@ -28,6 +28,8 @@ namespace WebShopApp
 				product.Price = Convert.ToDouble(items[2].Trim());
 				product.Description = Convert.ToString(items[3].Trim());
 				product.Count = Convert.ToInt32(items[4].Trim());
+				product.Category = Convert.ToString(items[5].Trim());
+
 				products.Add(product);
 			}
 

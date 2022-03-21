@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -39,7 +41,27 @@ namespace WebShopApp
 
 			app.UseStaticFiles();
 
+			app.UseRouting();
+			//app.UseEndpoints(endpoints =>
+			//{
+			//	endpoints.MapControllerRoute(
+			//		name: "default",
+			//		pattern: "{controller}/{action}/{a:int}/{b:int}"
+			//		);
+			//});
+			//app.UseEndpoints(endpoints =>
+			//{
+			//	endpoints.MapControllerRoute(
+			//		name: "default",
+			//		pattern: "{controller}/{action}/{a}",
+			//		constraints: new
+			//		{
+			//			a = new AlphaRouteConstraint()
+			//		}
+			//		);
+			//});
 			app.UseMvcWithDefaultRoute();
+
 		}
 	}
 }
