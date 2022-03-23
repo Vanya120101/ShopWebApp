@@ -1,0 +1,24 @@
+﻿@using WebShopApp.Models
+@model List<Car>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Cars</title>
+    <link href="~/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <h2>Cars</h2>
+    <table>
+        @foreach(var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
